@@ -1,0 +1,174 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center;   Centers horizontally */
+  /* align-items: center;       Centers vertically */
+  /* min-height: 100vh; */
+}
+
+.background {
+  position: relative;
+  min-height: 100vh;            /* full viewport like Netflix */
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%), url(assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;                /* center the card */
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px 80px;      
+  /* flex: 1;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%), url(assets/bg.jpg);
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0; */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(49, 43, 43, 0.6); */
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 2;
+}
+
+.logo {
+  width: 140px;
+}
+
+.signin-container {
+  position: relative;  
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  /* top: 15%; */
+  padding: 60px 68px 40px;
+  border-radius: 5px;
+}
+
+.signin-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.signin-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-container input {
+  background: #333;
+  border: 1px solid #c2b4b4;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.signin-container input:focus {
+  outline: none;
+  border: 2px solid #fcfafa;
+}
+
+.btn {
+  background: #e50914;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #f6121d;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.options a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+.signup a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.recaptcha {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: #8c8c8c;
+}
+.back-home {
+  color: #0071eb;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 6px;
+  /* display: inline-block; */
+  /* background: none;
+  padding: 0;  */
+}
+.back-home:hover {
+  text-decoration: underline;
+  color: white;
+}
+@media (max-width: 480px) {
+  .signin-container { padding: 40px 24px 28px; }
+  .header { left: 16px; }
+  .logo { width: 100px; }
+}
